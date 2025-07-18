@@ -43,7 +43,7 @@ logging.basicConfig(level=logging.INFO)
 # Авторизация Google Sheets
 scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/spreadsheets",
          "https://www.googleapis.com/auth/drive.file", "https://www.googleapis.com/auth/drive"]
-creds = Credentials.from_service_account_file("tg-bot-457119-fb7b4775dfe6.json", scopes=scope)
+creds = Credentials.from_service_account_file("pulsar-466316-4448d09998a0.json", scopes=scope)
 client = gspread.authorize(creds)
 sheet = client.open("Bot").sheet1
 settings_sheet = client.open("Bot").worksheet("Settings")
